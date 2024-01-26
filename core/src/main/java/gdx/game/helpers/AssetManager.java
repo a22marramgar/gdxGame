@@ -5,17 +5,18 @@ import com.badlogic.gdx.graphics.Texture;
 
 public class AssetManager {
 
-    public static Texture player, playerLeft, playerRight, droplet, life;
+    public static Texture player, playerLeft, playerRight, droplet, life, enemy;
 
     public static void load(){
 
-        player = new Texture(Gdx.files.internal("bucket.png"));
+        player = new Texture(Gdx.files.internal("dish.png"));
 
-        playerLeft = new Texture(Gdx.files.internal("bucket.png"));
+        playerLeft = new Texture(Gdx.files.internal("bowl.png"));
 
-        playerRight = new Texture(Gdx.files.internal("bucket.png"));
-        droplet = new Texture(Gdx.files.internal("droplet.png"));
+        playerRight = new Texture(Gdx.files.internal("bowl.png"));
+        droplet = new Texture(Gdx.files.internal("sandwich.png"));
         life = new Texture(Gdx.files.internal("life.png"));
+        enemy = new Texture(Gdx.files.internal("bucket.png"));
     }
 
     public static void dispose(){
@@ -24,5 +25,6 @@ public class AssetManager {
         playerLeft.dispose();
         droplet.dispose();
         life.dispose();
+        enemy.dispose();
     }
 }

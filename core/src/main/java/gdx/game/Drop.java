@@ -9,7 +9,9 @@ public class Drop extends Game {
     @Override
     public void create() {
         AssetManager.load();
-        setScreen(new GameScreen());
+        ScreenManager manager = new ScreenManager();
+        manager.initialize(this);
+
     }
 
     @Override

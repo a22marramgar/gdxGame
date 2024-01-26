@@ -12,8 +12,12 @@ public class Settings {
 
     public static final int DROPLET_SIZE = 64;
     public static final float DROPLET_VELOCITY = -170;
-    public static final long DROPLET_COUNTER = 1000000000;
-    public static final int HP = 3;
+    public static final long DROPLET_MIN_COUNTER = 500000000;
+    public static final long DROPLET_MAX_COUNTER = 1000000000L *2;
+    public static final int HP = 9;
     public static final int LIVE_SIZE = 64;
     public static final int LIVE_SPACE_BETWEEN = 16;
+    public static final long ENEMY_MIN_COUNTER = 1500000000;
+    public static final long ENEMY_MAX_COUNTER = 1000000000L * 5;
+    public static final float ENEMY_VELOCITY = -300;
 }
